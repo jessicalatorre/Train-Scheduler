@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <!-- Moment Reference -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/locale/af.js"></script>
 
@@ -57,19 +57,19 @@
 
 					<!-- <label for="name">T</label> -->
   					<input type="text" class="form-control"
-  					id="name" placeholder="Train Name">
+  					id="trainName" placeholder="Train Name">
 
 					<!-- <label for="dest">Destination</label> -->
   					<input type="text" class="form-control"
-  					id="dest" placeholder="Destination" >
+  					id="destination" placeholder="Destination" >
 			
 					<!-- <label for="firstTrain">First Train Time (24:00)</label> -->
-  					<input type="text" class="form-control" id="firstTime" placeholder="First Train Time (24:00)">
+  					<input type="text" class="form-control" id="firstTrainTime" placeholder="First Train Time (24:00)">
 
-  					<!-- <label for="freq">Frequency (min)</label> -->
-  					<input type="text" class="form-control" id="freq" placeholder="Frequency (min)">
+  					<!-- <label for="freq">Frequency (minutes)</label> -->
+  					<input type="text" class="form-control" id="frequency" placeholder="Frequency (minutes)">
   				
-  			 		<button class="btn btn-primary btn-lg" id="trainInfoBtn" type="submit">Submit</button>
+  			 		<button class="btn btn-primary btn-lg" id="submitNewTrain" type="button">Submit</button>
   					
   				</div><!--input end-->
   			</form>
