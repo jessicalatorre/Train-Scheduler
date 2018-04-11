@@ -6,21 +6,42 @@ $(document).ready(function () {
         authDomain: "train-scheduler-f1aee.firebaseapp.com",
         databaseURL: "https://train-scheduler-f1aee.firebaseio.com",
         projectId: "train-scheduler-f1aee",
-        storageBucket: "",
+        storageBucket: "train-scheduler-f1aee.appspot.com",
         messagingSenderId: "664303252169"
-    };
-    firebase.initializeApp(config);
+      };
+      firebase.initializeApp(config);
+
 // created variable to represent the database
 var database = firebase.database ();
 
-//create an event listener via JQuery to capture after button clicked
+//create an event listener to capture new train after user clicks button to submit
 $('#submitNewTrain').on('click', function(event) {
-// event.preventDefault(); //Only needed if button type in html is "submit". Changed type to "button" since event.preventDefault with "submit" doesn't work in Firefox browswer.
+event.preventDefault();
+console.log("button clicked");
 
 //store user input in variables; trim any extra spaces
 var trainName = $('#trainName').val().trim();
 var destination = $('#destination').val().trim();
-var firstTrainTime = $('firstTrainTime').val().trim();
-var frequency = $('frequency').val().trim();
+var firstTrainTime = moment($("#firstTrainTime").val().trim(), "hh:mm").subtract(1, "years").format("X");
+var frequency = $('#frequency').val().trim();
+
+// create local temporary object for holding new train data
+var newTrain = {
+    Name: trainName,
+    Destination: destination,
+    Time: firstTrainTime,
+    frequency: frequency,
+};
+
+database.ref().push(newTrain);
+console.log(trainName);
+console.log(destination);
+console.log(firstTrainTime);
+console.log(frequency);
+
+alert('train added!');
 })
 })
+
+//time now
+// console.log("CURRENT TIME: " +  moment(currentTime).format("hh:mm"));
