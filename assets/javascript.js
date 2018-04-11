@@ -16,13 +16,19 @@ var database = firebase.database ();
 
 //create an event listener to capture new train after user clicks button to submit
 $('#submitNewTrain').on('click', function(event) {
-event.preventDefault();
+// event.preventDefault();
 console.log("button clicked");
 
 //store user input in variables; trim any extra spaces
 var trainName = $('#trainName').val().trim();
 var destination = $('#destination').val().trim();
-var firstTrainTime = moment($("#firstTrainTime").val().trim(), "hh:mm").subtract(1, "years").format("X");
+
+//goal of moment is to calc time using the year method for the correct timezone that user needs
+var firstTrainTime = $('#firstTrainTime').val().trim();
+console.log (moment().format()); 
+// var convertedTime = moment(firstTrainTime, "hh:mm").subtract(1, "years").format("X");
+// console.log.apply(convertedTime);
+
 var frequency = $('#frequency').val().trim();
 
 // create local temporary object for holding new train data
@@ -39,7 +45,7 @@ console.log(destination);
 console.log(firstTrainTime);
 console.log(frequency);
 
-alert('train added!');
+// alert('train added!');
 })
 })
 
