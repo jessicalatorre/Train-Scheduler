@@ -1,0 +1,75 @@
+.jumbotron {
+    background-color: rgb(51, 37, 72);
+    text-align: center;
+    color: papayawhip;
+}
+
+h3 {
+    /* text-align: center; */
+    padding-left: 40px;
+    font-size: 20px;
+    position: relative;
+    bottom: 12px;
+    margin-left: 30px;
+}
+
+.panel {
+    background-color: rgb(107, 78, 152);
+    color: papayawhip;
+    width: 100%;
+    padding-bottom: 6px;
+    position: relative;
+    bottom: 50px;
+    height: 40px; 
+    
+}
+
+#form-container {
+    position: relative;
+    bottom: 120px;
+}
+
+#container {
+    float: left;
+    margin: 10px;
+    margin-left: 50px;
+    border-color:rgb(51, 37, 72);
+    width: 800px;
+}
+
+.form-control {
+    width: 200px;
+    padding: 15px;
+    margin: 5px;
+    position: relative;
+    top: 2px;
+}
+ 
+/* .row {
+
+} */
+
+#form {
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    bottom: 38px;
+    /* display: inline-flex; */
+}
+
+#submitNewTrain {
+    background-color: lightgoldenrodyellow;
+    color: maroon;
+    border-color: rgb(157, 157, 133);
+    border-bottom-style: outset;
+    border-bottom-width: 4px;
+    margin-top: 6px;
+    margin-left: 4px;
+    height: 34px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 20px;
+    /* float: left; */
+}

@@ -10,78 +10,78 @@
 	<!-- styling references -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
-	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
 
 	<!-- Firebase Reference -->
 	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 	<!-- Moment Reference -->
 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-	
+
 </head>
+
 <body>
 
-<div class="jumbotron">
-	<h1 class="text-center">Train Schedule</h1>
-	<h2 class="text-center"> All aboard!</h2>
-</div>
-<br>
-<div class="row">
-	<!-- table columns... -->
-	<div class="col-lg-12 col-md-12 col-sm-12">
-		<!--Table for the train schedule-->
-		<div class="panel panel-default">
-			<!-- panel contents -->
-			<h3>Arrival Times</h3>
-		</div>
-
-		<div>
-			<!-- Table -->
-			<table class="table" id="trainTable">
-				<thead>
-					<!--column titles-->
-					<tr>
-						<th>Name</th>
-						<th>Destination</th>
-						<th>Frequency(minutes)</th>
-						<th>Next Arrival (military time)</th>
-						<th>Minutes Away</th>
-					</tr>
-				</thead>
-
-				<tbody></tbody>
-				<!--content goes here-->
-
-			</table>
-		</div>
-		<!-- table end-->
-		<br>
-
-		<form>
-
-			<div class="form-group">
-
-				<!-- <label for="name">T</label> -->
-				<input type="text" class="form-control" id="trainName" placeholder="Train Name">
-
-				<!-- <label for="dest">Destination</label> -->
-				<input type="text" class="form-control" id="destination" placeholder="Destination">
-
-				<!-- <label for="firstTrain">First Train Time (24:00)</label> -->
-				<input type="text" class="form-control" id="firstTrainTime" placeholder="First Train Time (24:00)">
-
-				<!-- <label for="freq">Frequency (minutes)</label> -->
-				<input type="text" class="form-control" id="frequency" placeholder="Frequency (minutes)">
-
-				<button class="btn btn-primary btn-lg" id="submitNewTrain" type="button">Submit</button>
-
-			</div>
-			<!--input end-->
-		</form>
+	<div class="jumbotron">
+		<h1 class="text-center">Train Schedule</h1>
+		<h2 class="text-center"> All aboard!</h2>
 	</div>
-	<!--class="col" end-->
-</div>
-<!--class="row" end-->
+	<br>
+
+	<form>
+
+		<div class="form-group" id="form">
+			<div id="form-container"></div>
+			<!-- <label for="name">T</label> -->
+			<input type="text" class="form-control" id="trainName" placeholder="Train Name">
+
+			<!-- <label for="dest">Destination</label> -->
+			<input type="text" class="form-control" id="destination" placeholder="Destination">
+
+			<!-- <label for="firstTrain">First Train Time (24:00)</label> -->
+			<input type="text" class="form-control" id="firstTrainTime" placeholder="First Train Time (24:00)">
+
+			<!-- <label for="freq">Frequency (minutes)</label> -->
+			<input type="text" class="form-control" id="frequency" placeholder="Frequency (minutes)">
+			<br>
+
+			<button class="btn btn-primary btn-lg" id="submitNewTrain" type="button">Submit</button>
+			</div>
+		</div>
+		<!--input end-->
+	</form>
+	<div class="row">
+		<!-- table columns... -->
+		<div class="col-lg-12 col-md-12 col-sm-12" id="container">
+				<div class="row">
+						<div class="panel panel-default">
+								<h3>Arrival Times</h3>
+							</div>
+			<!--Table for the train schedule-->
+			<div>
+				<!-- Table -->
+				<table class="table" id="trainTable">
+					<thead>
+						<!--column titles-->
+						<tr>
+							<th>Name</th>
+							<th>Destination</th>
+							<th>Frequency(minutes)</th>
+							<th>Next Arrival (military time)</th>
+							<th>Minutes Away</th>
+						</tr>
+					</thead>
+
+					<tbody></tbody>
+					<!--content goes here-->
+
+				</table>
+			</div>
+			<!-- table end-->
+			<br>
+		</div>
+		<!--class="col" end-->
+	</div>
+	<!--class="row" end-->
 	<script src="assets/javascript.js"></script>
 </body>
 
