@@ -1,26 +1,35 @@
 .jumbotron {
     background-color: rgb(51, 37, 72);
-    text-align: center;
     color: papayawhip;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1 {
+   padding-top: 5px;
+   position: relative;
+   bottom: 15px;
 }
 
 h3 {
     /* text-align: center; */
-    padding-left: 40px;
+    padding-left: 5px;
     font-size: 20px;
     position: relative;
     bottom: 12px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .panel {
     background-color: rgb(107, 78, 152);
-    color: papayawhip;
+    color: lightgoldenrodyellow;
     width: 100%;
     padding-bottom: 6px;
     position: relative;
     bottom: 50px;
     height: 40px; 
+    margin-right: 50px;
     
 }
 
@@ -34,7 +43,7 @@ h3 {
     margin: 10px;
     margin-left: 50px;
     border-color:rgb(51, 37, 72);
-    width: 800px;
+    /* width: 800px; */
 }
 
 .form-control {
