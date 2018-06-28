@@ -8,4 +8,5 @@ Station managers can quickly type in the details of incoming trains, so they can
 
 If managers chooses to display the minutes away count down, those eagerly awaiting for their trains also have a more accurate count-down, as long as the manager refresh the page on display.
 
-# Check Out the App:https://jessicalatorre.github.io/Train-Scheduler/
+# Check Out the App:
+https://jessicalatorre.github.io/Train-Scheduler/
